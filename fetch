@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "Fetching ibc-go and SDK versions"
+
+ADDRESSES=./addresses.json
+OUTPUT=./versions.json
+
+if [ -s $OUTPUT ]; then
+        rm -f $OUTPUT
+        touch $OUTPUT
+else
+        touch $OUTPUT
+fi
+
+jq -r '.[] .grpc' <$ADDRESSES | while read -r n; do
+
+    echo $n
+
+    NODE_INFO=$(grpcurl $n cosmos.base.tendermint.v1beta1.Service.GetNodeInfo)
+    NETWORK_NAME=$(jq .defaultNodeInfo.network <<<"$NODE_INFO")
+    SDK_VERSION=$(jq .applicationVersion.cosmosSdkVersion <<<"$NODE_INFO")
+    IBCGO_VERSION=$(grep ibc-go -A 1 <<<"$NODE_INFO")
+
+    echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}"} >> $OUTPUT 
+
+done

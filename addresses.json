@@ -1,0 +1,20 @@
+[{
+    "network_name": "bitcanna",
+    "grpc": "grpc.bitcanna.io:443"
+},
+{
+    "network_name": "cronos",
+    "grpc": "grpc-cronos.crypto.org:443"
+},
+{
+    "network_name": "regen",
+    "grpc": "regen.stakesystems.io:2083"
+},
+{
+    "network_name": "umee",
+    "grpc": "grpc.aphrodite.main.network.umee.cc:443"
+},
+{
+    "network_name": "sifchain",
+    "grpc": "grpc.sifchain.finance:443"
+}]
