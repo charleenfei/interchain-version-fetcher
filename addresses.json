@@ -17,4 +17,20 @@
 {
     "network_name": "sifchain",
     "grpc": "grpc.sifchain.finance:443"
+},
+{
+    "network_name": "osmosis",
+    "grpc": "osmosis.strange.love:9090"  
+},
+{
+    "network_name": "cosmoshub",
+    "grpc": "cosmoshub.strange.love:9090"  
+},
+{
+    "network_name": "juno",
+    "grpc": "35.243.205.230:9090"  
+},
+{
+    "network_name": "sommelier",
+    "grpc": "35.230.37.28:9090"  
 }]

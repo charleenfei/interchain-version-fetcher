@@ -12,15 +12,24 @@ else
         touch $OUTPUT
 fi
 
-jq -r '.[] .grpc' <$ADDRESSES | while read -r n; do
+jq -r '.[] .grpc' <$ADDRESSES | while read -r ADDR; do
 
-    echo $n
+echo $ADDR
+HTTPS=443
+HTTP=9090
 
-    NODE_INFO=$(grpcurl $n cosmos.base.tendermint.v1beta1.Service.GetNodeInfo)
-    NETWORK_NAME=$(jq .defaultNodeInfo.network <<<"$NODE_INFO")
-    SDK_VERSION=$(jq .applicationVersion.cosmosSdkVersion <<<"$NODE_INFO")
-    IBCGO_VERSION=$(grep ibc-go -A 1 <<<"$NODE_INFO")
+if [[ "$ADDR" == *"$HTTP" ]]; then
+NODE_INFO=$(grpcurl -plaintext $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo) 
+fi
 
-    echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}"} >> $OUTPUT 
+if [[ "$ADDR" == *"$HTTPS" ]]; then
+NODE_INFO=$(grpcurl $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo) 
+fi
+
+NETWORK_NAME=$(jq .defaultNodeInfo.network <<<"$NODE_INFO")
+SDK_VERSION=$(jq .applicationVersion.cosmosSdkVersion <<<"$NODE_INFO")
+IBCGO_VERSION=$(grep ibc-go -A 1 <<<"$NODE_INFO")
+
+echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}"} >> $OUTPUT 
 
 done
