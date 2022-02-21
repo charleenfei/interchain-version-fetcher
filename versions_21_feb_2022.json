@@ -8,11 +8,11 @@
         "TENDERMINT_VERSION": "v0.34.13"
 }
 {
-        "NETWORK_NAME": "cronosmainnet_25-1",
+        "NETWORK_NAME": "regen-1",
         "SDK_VERSION": "v0.44.3",
         "IBCGO_VERSION": {
-                "path": "github.com/cosmos/ibc-go",
-                "version": "v1.2.2"
+                "path": "github.com/cosmos/ibc-go/v2",
+                "version": "v2.0.0",
         },
         "TENDERMINT_VERSION": "0.34.14"
 }
