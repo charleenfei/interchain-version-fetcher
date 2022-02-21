@@ -33,4 +33,8 @@
 {
     "network_name": "sommelier",
     "grpc": "35.230.37.28:9090"  
+},
+{
+    "network_name": "iris",
+    "grpc": "grpc.irishub-1.irisnet.org:9090"   
 }]
