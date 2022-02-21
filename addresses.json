@@ -31,7 +31,7 @@
     "grpc": "35.243.205.230:9090"  
 },
 {
-    "network_name": "sommelier-4=3",
+    "network_name": "sommelier-3",
     "grpc": "35.230.37.28:9090"  
 },
 {
