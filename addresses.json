@@ -1,40 +1,45 @@
 [{
-    "network_name": "bitcanna",
+    "network_name": "bitcanna-1",
     "grpc": "grpc.bitcanna.io:443"
 },
 {
-    "network_name": "cronos",
+    "network_name": "cronosmainnet_25-1",
     "grpc": "grpc-cronos.crypto.org:443"
 },
 {
-    "network_name": "regen",
+    "network_name": "regen-1",
     "grpc": "regen.stakesystems.io:2083"
 },
 {
-    "network_name": "umee",
+    "network_name": "umee-1",
     "grpc": "grpc.aphrodite.main.network.umee.cc:443"
 },
 {
-    "network_name": "sifchain",
+    "network_name": "sifchain-1",
     "grpc": "grpc.sifchain.finance:443"
 },
 {
-    "network_name": "osmosis",
+    "network_name": "osmosis-1",
     "grpc": "osmosis.strange.love:9090"  
 },
 {
-    "network_name": "cosmoshub",
+    "network_name": "cosmoshub-4",
     "grpc": "cosmoshub.strange.love:9090"  
 },
 {
-    "network_name": "juno",
+    "network_name": "juno-1",
     "grpc": "35.243.205.230:9090"  
 },
 {
-    "network_name": "sommelier",
+    "network_name": "sommelier-4=3",
     "grpc": "35.230.37.28:9090"  
 },
 {
-    "network_name": "iris",
+    "network_name": "irishub-1",
     "grpc": "grpc.irishub-1.irisnet.org:9090"   
-}]
+},
+{
+    "network_name": "gravity-bridge-3",
+    "grpc": "gravitychain.io:9090"   
+}
+]

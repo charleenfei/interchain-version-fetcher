@@ -15,7 +15,10 @@ fi
 jq -r '.[] .grpc' <$ADDRESSES | while read -r ADDR; do
 
 echo $ADDR
+
 HTTPS=443
+HTTPS1=2083
+
 HTTP=9090
 
 if [[ "$ADDR" == *"$HTTP" ]]; then
@@ -23,6 +26,10 @@ NODE_INFO=$(grpcurl -plaintext $ADDR cosmos.base.tendermint.v1beta1.Service.GetN
 fi
 
 if [[ "$ADDR" == *"$HTTPS" ]]; then
+NODE_INFO=$(grpcurl $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo) 
+fi
+
+if [[ "$ADDR" == *"$HTTPS1" ]]; then
 NODE_INFO=$(grpcurl $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo) 
 fi
 
