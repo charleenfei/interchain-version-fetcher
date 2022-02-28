@@ -5,6 +5,7 @@ echo "Fetching ibc-go and SDK versions"
 ADDRESSES=./addresses.json
 OUTPUT=./versions.json
 
+# clear old data if any
 if [ -s $OUTPUT ]; then
         rm -f $OUTPUT
         touch $OUTPUT
@@ -12,10 +13,10 @@ else
         touch $OUTPUT
 fi
 
-jq -r '.[] .grpc' <$ADDRESSES | while read -r ADDR; do
+# select all network names with grpc address values, remove any null addresses
+jq -r '.[].grpc | select (. != null)' <$ADDRESSES | while read -r ADDR; do
 
-echo $ADDR
-
+# accomodate for two patterns of https ports
 HTTPS=443
 HTTPS1=2083
 
@@ -34,10 +35,27 @@ NODE_INFO=$(grpcurl $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo)
 fi
 
 NETWORK_NAME=$(jq .defaultNodeInfo.network <<<"$NODE_INFO")
+TENDERMINT_VERSION=$(jq .defaultNodeInfo.version <<<"$NODE_INFO")
 SDK_VERSION=$(jq .applicationVersion.cosmosSdkVersion <<<"$NODE_INFO")
 IBCGO_VERSION=$(grep ibc-go -A 1 <<<"$NODE_INFO")
-TENDERMINT_VERSION=$(jq .defaultNodeInfo.version <<<"$NODE_INFO")
 
+echo $ADDR
+echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}", '"TENDERMINT_VERSION"': "$TENDERMINT_VERSION"} >> $OUTPUT 
+
+done
+
+# do the same for rest addresses
+jq -r '.[].rest | select (. != null)' <$ADDRESSES | while read -r ADDR; do
+
+NODE_INFO=$(curl -X GET -H "Content-Type: application/json" $ADDR/node_info) 
+
+NETWORK_NAME=$(jq .node_info.network <<<"$NODE_INFO")
+TENDERMINT_VERSION=$(jq .node_info.version <<<"$NODE_INFO")
+SDK_VERSION=$(jq .application_version.cosmos_sdk_version <<<"$NODE_INFO")
+BUILD_DEPS=$(jq .application_version.build_deps <<<"$NODE_INFO")
+IBCGO_VERSION=$(printf -- '%s\n' "${BUILD_DEPS[@]}" | grep "ibc-go")
+
+echo $ADDR
 echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}", '"TENDERMINT_VERSION"': "$TENDERMINT_VERSION"} >> $OUTPUT 
 
 done
