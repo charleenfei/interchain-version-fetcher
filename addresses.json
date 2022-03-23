@@ -4,12 +4,12 @@
         "rest": "https://main.api.agoric.net:443"
     },
     {
-        "network_name": "laozi-mainnet",
-        "rest": "https://laozi1.bandchain.org/api"
+        "network_name": "akash-2",
+        "rest": "https://rest-akash.ecostake.com"
     },
     {
-        "network_name": "bostrom",
-        "rest": "https://lcd.bostrom.cybernode.ai"
+        "network_name": "laozi-mainnet",
+        "rest": "https://laozi1.bandchain.org/api"
     },
     {
         "network_name": "bitcanna-1",
@@ -18,6 +18,10 @@
     {
         "network_name": "bitsong-2b",
         "rest": "https://lcd-bitsong.itastakers.com"
+    },
+    {
+        "network_name": "bostrom",
+        "rest": "https://lcd.bostrom.cybernode.ai"
     },
     {
         "network_name": "carbon-1",
@@ -89,7 +93,7 @@
     },
     {
         "network_name": "juno-1",
-        "grpc": "35.243.205.230:9090"
+        "grpc": "https://lcd-juno.itastakers.com"
     },
     {
         "network_name": "kava-9",
@@ -137,7 +141,7 @@
     },
     {
         "network_name": "secret-4",
-        "rest": "https://api.secretapi.io"
+        "rest": "https://lcd-secret.scrtlabs.com/"
     },
     {
         "network_name": "sentinelhub-2",
@@ -153,7 +157,7 @@
     },
     {
         "network_name": "sommelier-3",
-        "grpc": "35.230.37.28:9090"
+        "grpc": "https://lcd-sommelier.keplr.app"
     },
     {
         "network_name": "stargaze-1",
