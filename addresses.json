@@ -141,7 +141,7 @@
     },
     {
         "network_name": "secret-4",
-        "rest": "https://lcd-secret.scrtlabs.com/"
+        "rest": "https://secret-4.api.trivium.network:1317"
     },
     {
         "network_name": "sentinelhub-2",
