@@ -8,6 +8,14 @@
         "rest": "https://rest-akash.ecostake.com"
     },
     {
+        "network_name": "mantle-1",
+        "rest": "https://lcd.asset-mantle.ezstaking.io"
+    },
+    {
+        "network_name": "axelar-dojo-1",
+        "rest": "https://api-1.axelar.nodes.guru:443"
+    },
+    {
         "network_name": "laozi-mainnet",
         "rest": "https://laozi1.bandchain.org/api"
     },
@@ -28,6 +36,10 @@
         "rest": "https://api.carbon.network"
     },
     {
+        "network_name": "cerberus-chain-1",
+        "rest": "https://rest-cerberus.ecostake.com"
+    },
+    {
         "network_name": "cheqd-mainnet-1",
         "rest": "https://api.cheqd.net"
     },
@@ -37,15 +49,19 @@
     },
     {
         "network_name": "comdex-1",
-        "rest": "https://api.comdex.audit.one/rest"
+        "rest": "https://api-comdex.zenchainlabs.io/"
     },
     {
         "network_name": "cosmoshub-4",
         "grpc": "cosmoshub.strange.love:9090"
     },
     {
+        "network_name": "crescent-1",
+        "rest": "https://mainnet.crescent.network:1317"
+    },
+    {
         "network_name": "cronosmainnet_25-1",
-        "grpc": "grpc-cronos.crypto.org:443"
+        "rest": "https://rest.cronos.org/"
     },
     {
         "network_name": "crypto-org-chain-mainnet-1",
@@ -68,12 +84,24 @@
         "rest": "https://emoney.validator.network/api"
     },
     {
+        "network_name": "evmos_9001-2",
+        "rest": "https://api.evmos.interbloc.org"
+    },
+    {
         "network_name": "fetchhub-3",
         "rest": "https://rest-fetchhub.fetch.ai"
     },
     {
         "network_name": "colosseum-1",
         "rest": "https://lcd-mainnet.firmachain.dev:1317"
+    },
+    {
+        "network_name": "galaxy-1",
+        "rest": "https://galaxy-api.polkachu.com"
+    },
+    {
+        "network_name": "genesis_29-2",
+        "rest": "https://api.genesisl1.org"
     },
     {
         "network_name": "gravity-bridge-3",
@@ -116,8 +144,16 @@
         "rest": "https://node0.mainnet.lum.network/rest"
     },
     {
+        "network_name": "octa",
+        "rest": "http://3.71.102.151:1317"
+    },
+    {
         "network_name": "odin-mainnet-freya",
         "rest": "http://34.79.179.216:1317"
+    },
+    {
+        "network_name": "oraichain",
+        "rest": "http://18.116.209.76:1317"
     },
     {
         "network_name": "osmosis-1",
@@ -133,7 +169,7 @@
     },
     {
         "network_name": "regen-1",
-        "grpc": "regen.stakesystems.io:2083"
+        "rest": "https://regen.stakesystems.io"
     },
     {
         "network_name": "titan-1",
@@ -141,7 +177,7 @@
     },
     {
         "network_name": "secret-4",
-        "rest": "https://secret-4.api.trivium.network:1317"
+        "rest": "https://secret.api.consensus.one"
     },
     {
         "network_name": "sentinelhub-2",
@@ -168,12 +204,8 @@
         "rest": "https://lcd-iov.keplr.app"
     },
     {
-        "network_name": "columbus-5",
-        "rest": "https://blockdaemon-terra-lcd.api.bdnodes.net:1317"
-    },
-    {
         "network_name": "umee-1",
-        "grpc": "grpc.aphrodite.main.network.umee.cc:443"
+        "rest": "https://api.beaked.main.network.umee.cc"
     },
     {
         "network_name": "vidulum-1",

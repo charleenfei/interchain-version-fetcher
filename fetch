@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Fetching ibc-go and SDK versions"
+echo "Fetching ibc-go, Tendermint & SDK versions"
 
 ADDRESSES=./addresses.json
 OUTPUT=./versions.json
