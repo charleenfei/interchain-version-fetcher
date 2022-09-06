@@ -5,4 +5,4 @@
 
 `bash fetch`
 
-fetches cosmos-sdk, ibc-go, tendermint versions from populated address.json from cosmos/chain-registry
+fetches cosmos-sdk, ibc-go, tendermint versions from populated address.json
