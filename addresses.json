@@ -33,7 +33,7 @@
     },
     {
         "network_name": "canto",
-        "rest": "https://canto-rpc.polkachu.com"
+        "rest": "https://api.canto.nodestake.top"
     }, 
     {
         "network_name": "carbon-1",
@@ -69,7 +69,7 @@
     },
     {
         "network_name": "cronosmainnet_25-1",
-        "rest": "https://rest.cronos.org/"
+        "rest": "https://rest.cosmos.directory/cronos"
     },
     {
         "network_name": "crypto-org-chain-mainnet-1",
@@ -201,7 +201,7 @@
     },
     {
         "network_name": "secret-4",
-        "rest": "https://secret.api.consensus.one"
+        "rest": "https://secret-api.lavenderfive.com:443"
     },
     {
         "network_name": "sentinelhub-2",
@@ -229,7 +229,7 @@
     },
     {
         "network_name": "stride",
-        "rest": "https://api.stride.silentvalidator.com/"
+        "rest": "https://stride-api.lavenderfive.com/"
     },
     {
         "network_name": "tardigrade",
@@ -237,7 +237,7 @@
     },
     {
         "network_name": "umee-1",
-        "rest": "https://api.barnacle.mainnet.network.umee.cc"
+        "rest": "https://umee-api.polkachu.com"
     },
     {
         "network_name": "vidulum-1",
