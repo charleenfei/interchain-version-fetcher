@@ -21,7 +21,7 @@
     },
     {
         "network_name": "bitcanna-1",
-        "grpc": "grpc.bitcanna.io:443"
+        "rest": "https://bitcanna-api.panthea.eu"
     },
     {
         "network_name": "bitsong-2b",
@@ -113,7 +113,7 @@
     },
     {
         "network_name": "gravity-bridge-3",
-        "grpc": "gravitychain.io:9090"
+        "rest": "https://api-gravitybridge-ia.cosmosia.notional.ventures/"
     },
     {
         "network_name": "ixo",
@@ -125,7 +125,7 @@
     },
     {
         "network_name": "irishub-1",
-        "grpc": "grpc.irishub-1.irisnet.org:9090"
+        "rest": "https://api-irisnet-ia.cosmosia.notional.ventures/"
     },
     {
         "network_name": "juno-1",
@@ -161,7 +161,7 @@
     },
     {
         "network_name": "okex_chain",
-        "rest": "https://rest.cosmos.directory/okexchain"
+        "rest": "https://exchainrpc.okex.org/"
     },
     {
         "network_name": "omniflix",

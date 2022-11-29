@@ -50,6 +50,7 @@ jq -r '.[].rest | select (. != null)' <$ADDRESSES | while read -r ADDR; do
 
 NODE_INFO=$(curl -X GET -H "Content-Type: application/json" $ADDR/node_info) 
 
+# controller & host query params only working with REST endpoints for now
 CONTROLLER_PARAMS=$(curl -X GET -H "Content-Type: application/json" $ADDR/ibc/apps/interchain_accounts/controller/v1/params)
 CONTROLLER_ENABLED=$(jq -e .params? <<<"$CONTROLLER_PARAMS")
 
