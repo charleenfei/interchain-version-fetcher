@@ -34,6 +34,7 @@ if [[ "$ADDR" == *"$HTTPS1" ]]; then
 NODE_INFO=$(grpcurl $ADDR cosmos.base.tendermint.v1beta1.Service.GetNodeInfo) 
 fi
 
+
 NETWORK_NAME=$(jq .defaultNodeInfo.network <<<"$NODE_INFO")
 TENDERMINT_VERSION=$(jq .defaultNodeInfo.version <<<"$NODE_INFO")
 SDK_VERSION=$(jq .applicationVersion.cosmosSdkVersion <<<"$NODE_INFO")
@@ -49,6 +50,12 @@ jq -r '.[].rest | select (. != null)' <$ADDRESSES | while read -r ADDR; do
 
 NODE_INFO=$(curl -X GET -H "Content-Type: application/json" $ADDR/node_info) 
 
+CONTROLLER_PARAMS=$(curl -X GET -H "Content-Type: application/json" $ADDR/ibc/apps/interchain_accounts/controller/v1/params)
+CONTROLLER_ENABLED=$(jq -e .params? <<<"$CONTROLLER_PARAMS")
+
+HOST_PARAMS=$(curl -X GET -H "Content-Type: application/json" $ADDR/ibc/apps/interchain_accounts/host/v1/params)
+HOST_ENABLED=$(jq -e .params? <<<"$HOST_PARAMS")
+
 NETWORK_NAME=$(jq .node_info.network <<<"$NODE_INFO")
 TENDERMINT_VERSION=$(jq .node_info.version <<<"$NODE_INFO")
 SDK_VERSION=$(jq .application_version.cosmos_sdk_version <<<"$NODE_INFO")
@@ -56,6 +63,6 @@ BUILD_DEPS=$(jq .application_version.build_deps <<<"$NODE_INFO")
 IBCGO_VERSION=$(printf -- '%s\n' "${BUILD_DEPS[@]}" | grep "ibc-go")
 
 echo $ADDR
-echo {'"NETWORK_NAME"': "$NETWORK_NAME", '"SDK_VERSION"': "$SDK_VERSION", '"IBCGO_VERSION"': "{$IBCGO_VERSION}", '"TENDERMINT_VERSION"': "$TENDERMINT_VERSION"} >> $OUTPUT 
+echo {'"NETWORK_NAME"': "$NETWORK_NAME",'"SDK_VERSION"': "$SDK_VERSION",'"IBCGO_VERSION"': "{$IBCGO_VERSION}", '"TENDERMINT_VERSION"': "$TENDERMINT_VERSION",'"CONTROLLER_ENABLED"': "$CONTROLLER_ENABLED",'"HOST_ENABLED"': "$HOST_ENABLED"} >> $OUTPUT 
 
 done
