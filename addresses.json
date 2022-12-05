@@ -229,7 +229,7 @@
     },
     {
         "network_name": "stride",
-        "rest": "https://stride-api.lavenderfive.com/"
+        "rest": "https://stride.api.chandrastation.com"
     },
     {
         "network_name": "tardigrade",
@@ -237,7 +237,7 @@
     },
     {
         "network_name": "umee-1",
-        "rest": "https://umee-api.polkachu.com"
+        "rest": "https://api.barnacle.mainnet.network.umee.cc"
     },
     {
         "network_name": "vidulum-1",
