@@ -236,6 +236,16 @@
         "rest": "https://lcd.tgrade.posthuman.digital"
     },
     {
+        "chain_name": "terra",
+        "network_name": "columbus-5", 
+        "rest": "https://api-terra-ia.cosmosia.notional.ventures"
+    },
+    {
+        "chain_name": "terra2",
+        "network_name": "phoenix-1",
+        "rest": "https://lcd-terra.wildsage.io:443"
+    },
+    {
         "network_name": "umee-1",
         "rest": "https://umee-api.polkachu.com"
     },
