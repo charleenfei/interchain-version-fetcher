@@ -89,7 +89,7 @@
     },
     {
         "network_name": "comdex-1",
-        "rest": "https://api-comdex.zenchainlabs.io/"
+        "grpc": "comdex-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "commercio",
@@ -166,10 +166,6 @@
     {
         "network_name": "fxcore",
         "rest": "https://fx-rest.functionx.io"
-    },
-    {
-        "network_name": "galaxy-1",
-        "rest": "https://galaxy-api.polkachu.com"
     },
     {
         "network_name": "genesis_29-2",
@@ -297,7 +293,7 @@
     },
     {
         "network_name": "omniflix",
-        "rest": "https://omniflix.nodejumper.io:1317"
+        "grpc": "grpc.omniflix.nodestake.top:443"
     },
     {
         "network_name": "onomy-mainnet-1",
@@ -392,8 +388,8 @@
         "rest": "https://rest.stargaze-apis.com"
     },
     {
-        "network_name": "iov-mainnet-ibc",
-        "rest": "https://starname.nodejumper.io:1317"
+        "network_name": "starname",
+        "rest": "https://rest.cosmos.directory/starname"
     },
     {
         "network_name": "stride",
