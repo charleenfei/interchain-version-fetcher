@@ -1,15 +1,39 @@
 [
     {
+        "network_name": "eightball-1",
+        "grpc": "8ball-grpc.genznodes.dev:31090"
+    },
+    {
+        "network_name": "acre_9052-1",
+        "grpc": "grpc.acre.nodestake.top:443"
+    },
+    {
         "network_name": "agoric-3",
-        "rest": "https://main.api.agoric.net:443"
+        "grpc": "grpc.agoric.nodestake.top:443"
+    },
+    {
+        "network_name": "aioz_168-1",
+        "grpc": "grpc-dataseed.aioz.network:443"
     },
     {
         "network_name": "akash-2",
         "rest": "https://rest-akash.ecostake.com"
     },
     {
+        "network_name": "archway-1",
+        "grpc": "grpc.mainnet.archway.io:443"
+    },
+    {
+        "network_name": "arkh",
+        "grpc": "grpc.arkh.nodestake.top:443"
+    },
+    {
         "network_name": "mantle-1",
         "rest": "https://rest-assetmantle.ecostake.com"
+    },
+    {
+        "network_name": "xstaxy-1",
+        "grpc": "aura-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "axelar-dojo-1",
@@ -20,12 +44,20 @@
         "rest": "https://laozi1.bandchain.org/api"
     },
     {
+        "network_name": "beezee-1",
+        "grpc": "144.91.122.246:9999"
+    },
+    {
         "network_name": "bitcanna-1",
-        "rest": "https://bitcanna-api.panthea.eu"
+        "grpc": "bitcanna-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "bitsong-2b",
-        "rest": "https://lcd-bitsong.itastakers.com"
+        "grpc": "grpc-bitsong-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "bluzelle-9",
+        "grpc": "a.client.sentry.net.bluzelle.com:9090"
     },
     {
         "network_name": "bostrom",
@@ -34,31 +66,39 @@
     {
         "network_name": "canto",
         "rest": "https://api.canto.nodestake.top"
-    }, 
-    {
-        "network_name": "carbon-1",
-        "rest": "https://api.carbon.network"
     },
     {
-        "network_name": "cerberus-chain-1",
-        "rest": "https://rest-cerberus.ecostake.com"
+        "network_name": "carbon-1",
+        "grpc": "carbon-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "perun-1",
+        "grpc": "grpc.c4e.nodestake.top:443"
     },
     {
         "network_name": "cheqd-mainnet-1",
-        "rest": "https://api.cheqd.net"
+        "grpc": "cheqd-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "chihuahua-1",
         "rest": "https://api.chihuahua.wtf"
     },
     {
+        "network_name": "chimba",
+        "rest": "https://mainnet.chimbablockchain.io"
+    },
+    {
         "network_name": "comdex-1",
-        "rest": "https://api-comdex.zenchainlabs.io/"
+        "grpc": "comdex-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "commercio",
         "rest": "https://lcd-mainnet.commercio.network"
-    }, 
+    },
+    {
+        "network_name": "centauri-1",
+        "grpc": "composable-grpc.stake-town.com:10190"
+    },
     {
         "network_name": "cosmoshub-4",
         "rest": "https://lcd.cosmos.dragonstake.io"
@@ -69,11 +109,15 @@
     },
     {
         "network_name": "cronosmainnet_25-1",
-        "rest": "https://rest.cosmos.directory/cronos"
+        "grpc": "grpc-cronos.cosmos-spaces.cloud:1170"
     },
     {
         "network_name": "crypto-org-chain-mainnet-1",
-        "rest": "https://rest-cryptoorgchain.ecostake.com"
+        "grpc": "grpc-cryptoorgchain-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "cudos-1",
+        "grpc": "gmainnet-full-node-01.hosts.cudos.org:9090"
     },
     {
         "network_name": "mainnet-3",
@@ -81,19 +125,35 @@
     },
     {
         "network_name": "desmos-mainnet",
-        "rest": "https://api.mainnet.desmos.network"
+        "grpc": "desmos-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "dig-1",
-        "rest": "https://api-1-dig.notional.ventures"
+        "grpc": "grpc-dig-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "dyson-mainnet-01",
+        "grpc": "dys-grpc.dyson.lol:443"
+    },
+    {
+        "network_name": "echelon_3000-3",
+        "rest": "https://ech01api.mindheartsoul.org"
     },
     {
         "network_name": "emoney-3",
         "rest": "https://emoney.validator.network/api"
     },
     {
+        "network_name": "empowerchain-1",
+        "grpc": "grpc-empowerchain.mzonder.com:443"
+    },
+    {
+        "network_name": "ethos_7003-1",
+        "grpc": "ethos-grpc.provable.dev:443"
+    },
+    {
         "network_name": "evmos_9001-2",
-        "rest": "https://api.evmos.interbloc.org"
+        "grpc": "grpc-evmos-ia.cosmosia.notional.ventures:443"
     },
     {
         "network_name": "fetchhub-3",
@@ -104,28 +164,40 @@
         "rest": "https://lcd-mainnet.firmachain.dev:1317"
     },
     {
-        "network_name": "galaxy-1",
-        "rest": "https://galaxy-api.polkachu.com"
+        "network_name": "fxcore",
+        "rest": "https://fx-rest.functionx.io"
     },
     {
         "network_name": "genesis_29-2",
         "rest": "https://api.genesisl1.org"
     },
     {
+        "network_name": "gitopia",
+        "grpc": "grpc-gitopia.mzonder.com:443"
+    },
+    {
         "network_name": "gravity-bridge-3",
-        "rest": "https://api-gravitybridge-ia.cosmosia.notional.ventures/"
+        "grpc": "grpc-gravitybridge-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "haqq_11235-1",
+        "grpc": "m-s1-grpc.haqq.sh:1337"
     },
     {
         "network_name": "ixo",
-        "rest": "https://impacthub.ixo.world/rest/"
+        "grpc": "impacthub-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "injective-1",
-        "rest": "https://public.lcd.injective.network"
+        "grpc": "grpc-injective-ia.cosmosia.notional.ventures:443"
     },
     {
         "network_name": "irishub-1",
-        "rest": "https://api-irisnet-ia.cosmosia.notional.ventures/"
+        "grpc": "grpc-irisnet-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "jackal-1",
+        "grpc": "jackal-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "juno-1",
@@ -133,7 +205,7 @@
     },
     {
         "network_name": "kava-9",
-        "rest": "https://api.data.kava.io"
+        "grpc": "grpc-kava-ia.cosmosia.notional.ventures:443"
     },
     {
         "network_name": "kichain-2",
@@ -145,31 +217,91 @@
     },
     {
         "network_name": "kujira",
-        "rest": "https://rest-kujira.ecostake.com"
+        "grpc": "grpc-kujira-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "kyve-1",
+        "grpc": "kyve-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "lambda_92000-1",
+        "grpc": "lambda.grpc.m.stavr.tech:2287"
     },
     {
         "network_name": "likecoin-mainnet-2",
-        "rest": "https://mainnet-node.like.co"
+        "grpc": "grpc-likecoin-mainnet.pikaser.net:443"
+    },
+    {
+        "network_name": "logos_7002-1",
+        "grpc": "logos-grpc.provable.dev:443"
+    },
+    {
+        "network_name": "LumenX",
+        "rest": "https://rest.cosmos.directory/lumenx"
     },
     {
         "network_name": "lum-network-1",
-        "rest": "https://node0.mainnet.lum.network/rest"
+        "grpc": "lumnetwork-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "mars-1",
+        "grpc": "mars-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "mayachain-mainnet-v1",
+        "rest": "https://rest.cosmos.directory/mayachain"
+    },
+    {
+        "network_name": "medasdigital-1",
+        "grpc": "grpc.medas-digital.io:9090"
+    },
+    {
+        "network_name": "meme-1",
+        "grpc": "meme-grpc.polkachu.com:14790"
+    },
+    {
+        "network_name": "migaloo-1",
+        "grpc": "migaloo-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "mythos_7001-1",
+        "grpc": "mythos-grpc.provable.dev:443"
+    },
+    {
+        "network_name": "neutron-1",
+        "grpc": "neutron-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "noble-1",
+        "grpc": "noble-grpc.polkachu.com:21590"
+    },
+    {
+        "network_name": "nois-1",
+        "grpc": "nois-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "nolus",
+        "grpc": "nolus-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "nyx",
+        "grpc": "nym-grpc.polkachu.com:15390"
     },
     {
         "network_name": "odin-mainnet-freya",
         "rest": "http://34.79.179.216:1317"
     },
     {
-        "network_name": "okex_chain",
-        "rest": "https://exchainrpc.okex.org/"
+        "network_name": "omniflix",
+        "grpc": "grpc.omniflix.nodestake.top:443"
     },
     {
-        "network_name": "omniflix",
-        "rest": "https://omniflix.nodejumper.io:1317"
+        "network_name": "onomy-mainnet-1",
+        "rest": "https://rest.cosmos.directory/onomy"
     },
     {
         "network_name": "oraichain",
-        "rest": "http://18.116.209.76:1317"
+        "grpc": "grpc-oraichain.mms.team:443"
     },
     {
         "network_name": "osmosis-1",
@@ -180,20 +312,48 @@
         "rest": "https://api.gopanacea.org"
     },
     {
-        "network_name": "passage",
-        "rest": "https://passage-api.panthea.eu"
+        "network_name": "passage-2",
+        "grpc": "passage-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "persistence",
-        "rest": "https://api-persistence.starsquid.io"
+        "grpc": "grpc-persistent-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "planq_7070-2",
+        "grpc": "grpc.planq.network:443"
+    },
+    {
+        "network_name": "point_10687-1",
+        "grpc": "grpc.point.indonode.net:21090"
     },
     {
         "network_name": "provenance",
-        "rest": "https://api.provenance.io"
+        "grpc": "grpc-provenance.takeshi.team:443"
+    },
+    {
+        "network_name": "quasar-1",
+        "grpc": "quasar-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "quicksilver-2",
+        "grpc": "grpc-quicksilver.takeshi.team:443"
+    },
+    {
+        "network_name": "qwoyn-1",
+        "grpc": "qwoyn-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "realionetwork_3301-1",
+        "grpc": "realio-grpc.genznodes.dev:30090"
+    },
+    {
+        "network_name": "reb_1111-1",
+        "grpc": "grpc.rebus.nodestake.top:443"
     },
     {
         "network_name": "regen-1",
-        "rest": "https://regen.stakesystems.io"
+        "grpc": "grpc-regen-ia.cosmosia.notional.ventures:443"
     },
     {
         "network_name": "rizon",
@@ -201,46 +361,82 @@
     },
     {
         "network_name": "secret-4",
-        "rest": "https://secret-api.lavenderfive.com:443"
+        "grpc": "secretnetwork-grpc.lavenderfive.com:443"
     },
     {
         "network_name": "sentinelhub-2",
-        "rest": "https://api-persistence.starsquid.io"
+        "grpc": "grpc-sentinel-ia.cosmosia.notional.ventures:443"
     },
     {
         "network_name": "shentu-2.2",
-        "rest": "https://azuredragon.noopsbycertik.com"
+        "grpc": "grpc-shentu-01.stakeflow.io:2402"
     },
     {
         "network_name": "sifchain-1",
-        "rest": "https://api.sifchain.finance:443"
+        "grpc": "sifchain-grpc.polkachu.com:13290"
     },
     {
         "network_name": "sommelier-3",
-        "rest": "https://api.sommelier.pupmos.network"
+        "grpc": "sommelier-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "stafihub-1",
+        "grpc": "public-grpc-rpc1.stafihub.io:443"
     },
     {
         "network_name": "stargaze-1",
         "rest": "https://rest.stargaze-apis.com"
     },
     {
-        "network_name": "iov-mainnet-ibc",
-        "rest": "https://starname.nodejumper.io:1317"
+        "network_name": "starname",
+        "rest": "https://rest.cosmos.directory/starname"
     },
     {
         "network_name": "stride",
-        "rest": "https://stride-api.lavenderfive.com/"
+        "grpc": "stride-grpc.polkachu.com:12290"
     },
     {
-        "network_name": "tardigrade",
-        "rest": "https://lcd.tgrade.posthuman.digital"
+        "network_name": "teritori-1",
+        "grpc": "teritori-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "terp-network",
+        "grpc": "grpc.terp.nodestake.top:443"
+    },
+    {
+        "network_name": "terra-classic",
+        "grpc": "grpc-terra-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "terra-2",
+        "grpc": "terra2-grpc.lavenderfive.com:443"
+    },
+    {
+        "network_name": "tgrade",
+        "rest": "https://rest.cosmos.directory/tgrade"
     },
     {
         "network_name": "umee-1",
-        "rest": "https://umee-api.polkachu.com"
+        "grpc": "grpc-umee-ia.cosmosia.notional.ventures:443"
+    },
+    {
+        "network_name": "unification",
+        "grpc": "grpc.unification.io:443"
+    },
+    {
+        "network_name": "ununifi-beta-v1",
+        "grpc": "grpc.ununifi.nodestake.top:9090"
+    },
+    {
+        "network_name": "uptick_117-1",
+        "grpc": "uptick-grpc.stakerhouse.com:443"
     },
     {
         "network_name": "vidulum-1",
         "rest": "https://mainnet-lcd.vidulum.app"
+    },
+    {
+        "network_name": "xpla",
+        "rest": "https://rest.cosmos.directory/xpla"
     }
 ]
